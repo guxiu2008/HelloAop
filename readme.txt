@@ -44,3 +44,13 @@ com.guxiu.aspectjannotation：使用AspectJ框架注解的AOP编程（更方便�
         aspectjweaver和aspectjrt使用版本太低，百度搜索出来的版本最高只有1.5.4，但是原来有更高版本，使用1.7.4即可解决
     3）Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut
         这个和第2个错误很相似，原因是后置通知@AfterReturning注解中必须填写returning选项，否则就会报异常
+
+关于<aop:aspect>和<aop:advisor>的异同
+<aop:aspect>
+1、大多用于日志，缓存
+2、定义切面（切面包括通知和切点）
+3、定义切面时，只需要定义一般的bean就行
+<aop:advisor>
+1、大多用于事务管理
+2、定义通知器（通知器跟切面一样，也包括通知和切点）
+3、引用的通知时，通知必须实现Advice接口
