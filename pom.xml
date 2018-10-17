@@ -64,7 +64,7 @@
         </dependency>
         <!-- spring aop相关依赖 -->
 
-        <!-- AspectJ 相关依赖 -->
+        <!-- AspectJ AOP相关依赖 -->
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-aspects -->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -83,8 +83,7 @@
             <artifactId>aspectjrt</artifactId>
             <version>1.7.4</version>
         </dependency>
-
-        <!-- AspectJ 相关依赖 -->
+        <!-- AspectJ AOP相关依赖 -->
 
     </dependencies>
 
