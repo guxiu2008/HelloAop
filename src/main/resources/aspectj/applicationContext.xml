@@ -16,7 +16,6 @@
         <aop:aspect ref="myAspect">
             <!-- 3.1 配置切入点,通知最后增强那些方法 -->
             <!-- execution匹配哪些类的哪些方法作为切入点, 其中第一个星表示所有返回类型, 第二个星表示所有方法, (..)表示方法的任意参数, 下面配置中的UserDaoImop也可以修改为User* -->
-            <!-- 切记不能存在*.*的配置,会失效 -->
             <aop:pointcut id="myPointcut" expression="execution(* com.guxiu.aspectj.UserDaoImpl.*(..))" />
             <!-- 3.2 关联通知Advice和切入点pointCut -->
             <!-- 3.2.1 前置通知 -->
